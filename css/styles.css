@@ -5,15 +5,13 @@
 }
 
 body{
-    font-family: var(--font-mono);
+ font-family: sans-serif;
 }
 
+
 section{
-    display:flex;
-    flex-wrap: wrap;
-    height: 100vh;
+    display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 1em;
 }
@@ -25,7 +23,8 @@ section h1{
 section h2{
     text-align:center;
     width: 100%;
-    margin-bottom: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 2.5em
 }
 
@@ -58,8 +57,6 @@ section form input[type='submit']{
     margin-top: 1.5em;
     background-color: #003DFF;
     color: #fff;
-    font-family: var(--font-mono);
-    transition: var(--transition);
 } 
 
 section form input[type='submit']:active{
@@ -80,14 +77,32 @@ section p a{
 
 /* Home */
 
-section button{
+button{
     background-color: #003DFF;
     color: #fff;
-    font-family: var(--font-mono);
-    transition: var(--transition);
     border: none;
     padding: 0.5em 1em;
     border-radius: 9px;
     margin-top: 1.5em;
     font-size: 1em;
+}
+
+.btn-primary{
+    background-color: #003DFF;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    font-size: 1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.nuevosDatos{
+    margin-top: 1.5rem;
+    text-align: center;
 }
